@@ -1,0 +1,11 @@
+<resources>
+    <color name="morado">#6A1B9A</color>
+    <color name="morado_oscuro">#4A1270</color>
+    <color name="naranja">#FF9800</color>
+    <color name="rojo">#D32F2F</color>
+    <color name="rojo_oscuro">#B71C1C</color>
+    <color name="lila_tarjeta">#EDE1F5</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="texto_principal">#222222</color>
+    <color name="texto_secundario">#666666</color>
+</resources>

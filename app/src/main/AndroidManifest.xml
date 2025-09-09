@@ -2,16 +2,20 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="co.edu.upb.moviles.entrega_final1">
 
+    <!-- Si no usas notificaciones, puedes borrar esta línea -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="Entrega_Final1"
+        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EntregaFinal">
 
+        <!-- ÚNICA activity con MAIN/LAUNCHER -->
         <activity
-            android:name="co.edu.upb.moviles.entrega_final1.ui.main.MainActivity"
+            android:name=".ui.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,6 +23,12 @@
             </intent-filter>
         </activity>
 
+        <!-- Detalle / edición -->
+        <activity
+            android:name=".ui.detail.TaskDetailActivity"
+            android:parentActivityName=".ui.main.MainActivity" />
+
     </application>
 </manifest>
+
 

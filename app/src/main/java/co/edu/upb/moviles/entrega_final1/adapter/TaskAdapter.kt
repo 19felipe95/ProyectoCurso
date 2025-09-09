@@ -22,11 +22,7 @@ class TaskAdapter(
     inner class VH(val b: ItemTaskBinding) : RecyclerView.ViewHolder(b.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VH {
-        val b = ItemTaskBinding.inflate(
-            LayoutInflater.from(parent.context),
-            parent,
-            false
-        )
+        val b = ItemTaskBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return VH(b)
     }
 

@@ -8,5 +8,5 @@ data class Task(
     @PrimaryKey(autoGenerate = true) val id: Int = 0,
     val titulo: String,
     val descripcion: String,
-    val fecha: String
+    val fecha: String            // formato dd/MM/yyyy (ej. 21/05/2026)
 )
